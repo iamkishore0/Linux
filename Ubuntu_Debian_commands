@@ -1,0 +1,14 @@
+sudo apt update (Update system)
+sudo apt upgrade (Upgrade system)
+sudo apt-get install <pkg name> (Installs a package) 
+    sudo apt-get install java
+    sudo apt-get install python
+    sudo apt-get install nginx
+sudo dpkg --list | grep -i <pkg name> (Displays all packages installed with given package name)
+sudo apt remove <pkg name> (Removes only package, not configuration)
+sudo apt-get purge <pkg name> (Removes package with configuration)
+
+DPKG Error?
+sudo dpkg --configure -a (reconfigure dpkg, If this command is not working try below command)
+sudo lsof /var/lib/dpkg/lock-frontend (Output the running dpkg process and kill that process by using below command)
+sudo kill -9 <PID> (after killing the process again run sudo dpkg --configure -a command dpkg configuration issue will be rectified)
