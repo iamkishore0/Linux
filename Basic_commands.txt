@@ -1,3 +1,4 @@
+BASIC COMMANDS
 pwd -Present working directory
 ls  -Lists content in the pwd
 cd  -Change directory
@@ -29,3 +30,32 @@ uname -Name of the operating system
   uname -a  -Prints all the information of the system
 chmod -Change permissions of a file or directory
    chmod +x <file or path>  -Gives 777 permissions to a file or path
+   
+
+NETWORKING
+ifconfig -Prints basic network details such as inet,inet6, boardcast, ether details, which were up
+   ifconfig -a -Prints both up & down
+sudo ifconfig eth0 <ip address> netmask <netmask ip> -Assigns ip to a netmask
+    sudo ifconfig up eth0 -To up an eth0
+    sudo ifconfig down eth0 -To down an eth0
+ip addr show -Prints network interface
+  sudo ip addr add <ip adress> eth0 -Add an ip to network interface
+  sudo ip addr del <ip address> eth0 -Removes an ip from network interface
+ip neigh -Displays reachable neighbor tables
+sudo ifup eth0 -Activates network interface
+sudo ifdown eth0 -Deactivates network interface
+ping <ip address or domain> -Pings ip or domain, result whether ip or domain is hosted or not
+    ping google.com
+    ping 25.36.98..22
+netstat -displays network connections, routing tables, interface statitics, ports etc...
+    sudo netstat -tnlp -displays active internet connections
+nmap <ip adress or domain> -scan open ports
+
+FIREWALL (Never execute ufw commands for virtual servers, always check with cloud provider security groups) 
+sudo ufw status -Output firewall status, active or inactive
+sudo ufw enable -Enables firewall
+sudo ufw allow 22 -Opens port 22
+sudo ufw disable -Disable firewall
+
+
+
