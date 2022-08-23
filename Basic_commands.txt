@@ -1,34 +1,34 @@
 BASIC COMMANDS
-pwd -Present working directory
-ls  -Lists content in the pwd
-cd  -Change directory
+pwd (Present working directory)
+ls  (Lists content in the pwd)
+cd  (Change directory)
   eg: cd /home/ubuntu/
       cd /home/centos/
-touch <file name>  -Creates a zero bite file with the given file name
-vi <file name>  -To edit a file using vi editor
-nano <file name>  -To edit a file using nano editor
-vim <file name>  -To edit a file using vim editor
-mkdir <directory name> -Creates a directory (folder)
-rm <file name> -Deletes a file 
-rmdir <directory name> -Deletes an empty directory
-rm -r <directory name> -Deletes non-empty directory
-rm -rf <directory name> -Deletes a directory forcely
-cp <file name> <path> -Copies a file to given path
-mv <file name> <path> -Moves a file to given path
-mv <file name> <new file name> -Rename a file 
-cat <file name> -Prints the content of the file
-echo <content> >> <file name> -Write content to a file 
+touch <file name>  (Creates a zero bite file with the given file name)
+vi <file name>  (To edit a file using vi editor)
+nano <file name>  (To edit a file using nano editor)
+vim <file name>  (To edit a file using vim editor)
+mkdir <directory name> (Creates a directory - folder)
+rm <file name> (Deletes a file )
+rmdir <directory name> (Deletes an empty directory)
+rm -r <directory name> (Deletes non-empty directory)
+rm -rf <directory name> (Deletes a directory forcely)
+cp <file name> <path> (Copies a file to given path)
+mv <file name> <path> (Moves a file to given path)
+mv <file name> <new file name> (Rename a file)
+cat <file name> (Prints the content of the file)
+echo <content> >> <file name> (Write content to a file )
    eg: echo hello world >> file1.txt
-sudo -i -Switch to root user
-su - <user> -Switch to a user
-df -Disk free, displays the disk free information
-du -Disk usage, displays the disk usage information
-zip -Compress and zip a file
-unzip -Unzip a zip file
-tar -xzf <tar file> -Untar a file
-uname -Name of the operating system
+sudo -i (Switch to root user)
+su - <user> (Switch to a user)
+df -(Disk free displays the disk free information)
+du -(Disk usage, displays the disk usage information)
+zip - (Compress and zip a file)
+unzip - (Unzip a zip file)
+tar -xzf <tar file> (Untar a file)
+uname (Name of the operating system)
   uname -a  -Prints all the information of the system
-chmod -Change permissions of a file or directory
+chmod (Change permissions of a file or directory)
    chmod +x <file or path>  -Gives 777 permissions to a file or path
    
 
