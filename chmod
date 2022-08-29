@@ -1,0 +1,25 @@
+Permissions for a file/folder in linux
+   read(4) - r
+   write(2) - w
+   execute(1) - x
+   
+Users
+   Owner
+   Group
+   Others
+  
+
+   owner      group     others
+  r  w  x    r  w  x   r  w  x
+ (4)(2)(1)  (4)(2)(1) (4)(2)(1)
+
+
+command to check file permissions
+ls -l
+
+Giving permissions
+   full permission to all users - chmod 777 <file name>
+   full permission only to owner - chmod 700 <file name>
+   full permission to owner, write permission to group and execution permission to others - chmod 721 <file name>
+   only read & write permission to all users - chmod 666 <file name> (4+2)
+   only read & execute permission to all users - chmod 555 <file name> (4+1)
