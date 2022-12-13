@@ -34,11 +34,7 @@ chmod (Change permissions of a file or directory)
 
 
 
-FIREWALL (Never execute ufw commands for virtual servers, always check with cloud provider security groups) 
-sudo ufw status -Output firewall status, active or inactive
-sudo ufw enable -Enables firewall
-sudo ufw allow 22 -Opens port 22
-sudo ufw disable -Disable firewall
+
 
 
 
