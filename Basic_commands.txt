@@ -24,7 +24,7 @@ su - <user> (Switch to a user)
 df -(Disk free displays the disk free information)
 du -(Disk usage, displays the disk usage information)
 zip <file name> (Compress and zip a file)
-zip <file name>  (Unzip a zip file)
+unzip <file name>  (Unzip a zip file)
 tar -xzf <tar file> (Untar a file)
 uname (Name of the operating system)
   uname -a  -Prints all the information of the system
