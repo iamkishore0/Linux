@@ -1,5 +1,6 @@
 sudo apt update (Update system)
 sudo apt upgrade (Upgrade system)
+sudo apt search <pkg name> (search the packages)
 sudo apt-get install <pkg name> (Installs a package) 
     sudo apt-get install java
     sudo apt-get install python
